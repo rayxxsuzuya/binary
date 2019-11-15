@@ -161,6 +161,11 @@ body {
     background-color: #000000;
 }
 
+.about {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .about__text {
     margin: 0 auto;
     margin-top: 60px;
@@ -176,7 +181,7 @@ body {
 .about__flex-box {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 95px;
+    margin-bottom: 76px;
 }
 
 .about__item {
@@ -210,4 +215,37 @@ body {
     font-weight: 300;
     line-height: 26px;
     text-align: center;
+}
+
+.portfolio {
+    background-color: #f3f3f3;
+    padding-top: 5.25%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 62px;
+}
+
+.portfolio__menu {
+    margin-top: 4.3%;
+    margin-bottom: 7%;
+}
+
+.portfolio__title::after {
+    left: 47.4%;
+    bottom: -35px;
+}
+
+.portfolio__grid-box {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(290px, 538px));
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 16px 27px;
+}
+
+.portfolio__button {
+    color: #000;
+    border-color: #000;
+    margin-top: 56px;
+    margin-bottom: 0;
 }
