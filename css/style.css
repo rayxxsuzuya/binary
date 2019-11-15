@@ -95,12 +95,18 @@ body {
 
 .header__link {
     display: block;
+    transition: 0.3s;
 }
 
 .header__arrow {
     display: block;
     max-width: 100%;
     margin: 0 auto;
+    transition: 0.3s;
+}
+
+.header__arrow:hover {
+    transform: scale(1.5) translateY(5px);
 }
 
 .navbar {
@@ -222,7 +228,7 @@ body {
     padding-top: 5.25%;
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 62px;
+    padding-bottom: 64px;
 }
 
 .portfolio__menu {
@@ -248,4 +254,42 @@ body {
     border-color: #000;
     margin-top: 56px;
     margin-bottom: 0;
+}
+
+.partners {
+    background-image: url(../img/partners-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.partners__container {
+    padding-top: 4.97%;
+    padding-bottom: 5.4%;
+}
+
+.partners__title {
+    margin: 0 auto;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.875em;
+    font-weight: 300;
+    letter-spacing: 1.8px;
+    margin-bottom: 94px;
+}
+
+.partners__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partners__item {
+    margin-right: 111px;
+}
+
+.partners__item_last {
+    margin-right: 0;
 }
