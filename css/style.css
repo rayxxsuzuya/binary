@@ -301,7 +301,7 @@ body {
 
 .contact__container {
     padding-top: 9.39%;
-    padding-bottom: 102px;
+    padding-bottom: 98px;
 }
 
 .contact__grid-box {
@@ -316,13 +316,15 @@ body {
 .contact__grid-box {
     display: grid;
     grid-template-columns: minmax(290px, 385px) 253px;
-    grid-column-gap: 82px;
+    grid-column-gap: 79px;
+    padding-left: 4.15%;
 }
 
 .contact__item_form {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-top: 46px;
 }
 
 .contact__input-name {
@@ -334,10 +336,13 @@ body {
     border: none;
     border-top: 1px solid black;
     padding-left: 10px;
+}
+
+.contact__input-name-wrap {
     position: relative;
 }
 
-.contact__input-name::before {
+.contact__input-name-wrap::before {
     content: 'YOUR NAME';
     display: block;
     color: #000000;
@@ -346,7 +351,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.84px;
     position: absolute;
-    top: -10px;
+    top: -32px;
     left: 0;
 }
 
@@ -359,13 +364,30 @@ body {
     border: none;
     border-top: 1px solid black;
     padding-left: 10px;
+}
+
+.contact__input-email-wrap {
+    position: relative;
     margin-bottom: 27.1%;
+}
+
+.contact__input-email-wrap::before {
+    content: 'YOUR E-MAIL';
+    display: block;
+    color: #000000;
+    font-size: 0.875em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.84px;
+    position: absolute;
+    top: -32px;
+    left: 0;
 }
 
 .contact__message {
     display: block;
-    width: 383px;
-    height: 118px;
+    width: 374px;
+    height: 106px;
     background-color: #f8f7f7;
     resize: none;
     border: none;
@@ -374,6 +396,23 @@ body {
     padding-top: 10px;
     padding-left: 10px;
     line-height: 20px;
+}
+
+.contact__message-wrap {
+    position: relative;
+}
+
+.contact__message-wrap::before {
+    content: 'MESSAGE';
+    display: block;
+    color: #000000;
+    font-size: 0.875em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.84px;
+    position: absolute;
+    top: -34px;
+    left: 0;
 }
 
 .contact__btn-send {
@@ -385,14 +424,14 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.84px;
-    margin-top: 27px;
+    margin-top: 39px;
     margin-left: 88%;
     outline: none;
     cursor: pointer;
 }
 
 .contact__paragraph {
-    margin-top: 0;
+    margin-top: 8px;
     color: #000000;
     font-size: 0.875em;
     font-weight: 400;
