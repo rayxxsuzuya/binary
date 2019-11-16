@@ -274,8 +274,8 @@ body {
 }
 
 .partners__container {
-    padding-top: 4.97%;
-    padding-bottom: 5.4%;
+    padding-top: 93px;
+    padding-bottom: 102px;
 }
 
 .partners__title {
@@ -285,13 +285,14 @@ body {
     font-size: 1.875em;
     font-weight: 300;
     letter-spacing: 1.8px;
-    margin-bottom: 94px;
+    margin-bottom: 9.7%;
 }
 
 .partners__box {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .partners__item {
@@ -903,5 +904,21 @@ body {
     .portfolio__grid-box {
         grid-template-columns: minmax(290px, 538px);
         grid-column-gap: 0;
+    }
+}
+
+@media (max-width: 634px) {
+    .partners__box {
+        flex-direction: column;
+    }
+
+    .partners__item {
+        margin-right: 0;
+        margin-bottom: 45px;
+    }
+
+    .partners__container {
+        padding-top: 62px;
+        padding-bottom: 15px;
     }
 }
