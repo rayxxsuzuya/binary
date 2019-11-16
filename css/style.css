@@ -886,3 +886,10 @@ body {
         margin-bottom: 15.85%;
     }
 }
+
+@media (max-width: 374px) {
+    .about__text {
+        max-width: 298px;
+        margin-bottom: 11.85%;
+    }
+}
