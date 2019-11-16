@@ -227,14 +227,14 @@ body {
 
 .portfolio {
     background-color: #f3f3f3;
-    padding-top: 5.25%;
+    padding-top: 99px;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 64px;
 }
 
 .portfolio__menu {
-    margin-top: 4.3%;
+    margin-top: 80px;
     margin-bottom: 7%;
 }
 
@@ -250,6 +250,11 @@ body {
     grid-template-columns: repeat(2, minmax(290px, 538px));
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 16px 27px;
+}
+
+.portfolio__picture {
+    display: block;
+    max-width: 100%;
 }
 
 .portfolio__button {
@@ -891,5 +896,12 @@ body {
 
     .about__text {
         margin-bottom: 15.85%;
+    }
+}
+
+@media (max-width: 1161px) {
+    .portfolio__grid-box {
+        grid-template-columns: minmax(290px, 538px);
+        grid-column-gap: 0;
     }
 }
