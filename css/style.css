@@ -53,6 +53,7 @@ body {
     margin-top: 15.5%;
     margin-bottom: 28.1%;
     position: relative;
+    max-width: 757px;
 }
 
 .header__title::after {
@@ -63,8 +64,7 @@ body {
     background-color: #fff;
     position: absolute;
     bottom: -46px;
-    /* left: 435px; */
-    left: 44.8%;
+    left: 43%;
 }
 
 .header__subtitle {
@@ -623,7 +623,7 @@ body {
 
 .hvr-sweep-to-top {
     display: block;
-    vertical-align: middle;
+    /* vertical-align: middle; */
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -670,7 +670,7 @@ body {
 
 .hvr-underline-from-left {
     display: block;
-    vertical-align: middle;
+    /* vertical-align: middle; */
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -734,4 +734,87 @@ body {
 .hvr-underline-reveal:active:before {
     -webkit-transform: translateY(0);
     transform: translateY(0);
+}
+
+@media (max-width: 845px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 831px) {
+    .header__title::after {
+        left: 44%;
+    }
+
+    .header__title {
+        font-size: 27.625px;
+    }
+}
+
+@media (max-width: 694px) {
+    .header__title {
+        font-size: 24.625px;
+    }
+
+    .header__title::after {
+        left: 43%;
+    }
+}
+
+@media (max-width: 561px) {
+    .header__title::after {
+        left: 41%;
+    }
+}
+
+@media (max-width: 500px) {
+    .header__title::after {
+        left: 39.5%;
+    }
+}
+
+@media (max-width: 418px) {
+    .header__title::after {
+        left: 36.5%;
+    }
+
+    .header__title {
+        font-size: 22.625px;
+    }
+}
+
+@media (max-width: 378px) {
+    .header__title::after {
+        left: 35%;
+    }
+}
+
+@media (max-width: 360px) {
+    .header__title {
+        font-size: 21.625px;
+    }
+
+    .header__title::after {
+        left: 33.5%;
+    }
+}
+
+@media (max-width: 320px) {
+    .header__title {
+        font-size: 20.625px;
+    }
+
+    .header__title::after {
+        left: 31.5%;
+        margin-bottom: 12px;
+    }
+
+    .header__btn-read-more {
+        margin-bottom: 12.8%;
+    }
+
+    .header__container {
+        padding-bottom: 14.25%;
+    }
 }
